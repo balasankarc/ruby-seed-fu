@@ -8,7 +8,8 @@ Build-Depends: debhelper (>= 7.0.50~),
                rake,
                ruby-activerecord (>= 3.1),
                ruby-activesupport (>= 3.1),
-               ruby-rspec
+               ruby-rspec,
+               ruby-sqlite3
 Standards-Version: 3.9.6
 Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-seed-fu.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-seed-fu.git
@@ -24,5 +25,7 @@ Depends: ruby | ruby-interpreter,
          ruby-activesupport (>= 3.1),
          ${misc:Depends},
          ${shlibs:Depends}
-Description: Easily manage seed data in your Active Record application
- Seed Fu is an attempt to once and for all solve the problem of inserting and maintaining seed data in a database. It uses a variety of techniques gathered from various places around the web and combines them to create what is hopefully the most robust seed data system around.
+Description: easily manage seed data in an Active Record application
+ Seed Fu is an attempt to once and for all solve the problem of inserting and 
+ maintaining seed data in a database. Seed Fu depends on Active Record, but 
+ doesn't have to be used with a full Rails app.
