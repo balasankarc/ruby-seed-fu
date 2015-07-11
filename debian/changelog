@@ -1,0 +1,5 @@
+ruby-seed-fu (2.3.5-1) UNRELEASED; urgency=medium
+
+  * Initial release (Closes: #748374)
+
+ -- Balasankar C <balasankarc@autistici.org>  Sat, 11 Jul 2015 19:43:16 +0530
