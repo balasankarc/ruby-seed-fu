@@ -16,3 +16,11 @@
 
 %:
 	dh $@ --buildsystem=ruby --with ruby
+
+override_dh_installchangelogs:
+	dh_installchangelogs CHANGELOG.md
+
+override_dh_clean:
+	rm -rf spec/connections/test.sqlite3
+	rm -rf debug.log
+	dh_clean
